@@ -1,0 +1,110 @@
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background: #fdfaf6;
+    color: #222;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e6bff;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #1e6bff;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #e8f0ff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* MOMENT SECTIONS */
+.moment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 50px;
+    gap: 20px;
+}
+
+.moment:nth-child(even) {
+    flex-direction: row-reverse;
+    background: #f7f7f7;
+}
+
+.moment .text {
+    flex: 1;
+    padding: 20px;
+}
+
+.moment .text h2 {
+    font-size: 28px;
+    color: #1e6bff;
+    margin-bottom: 15px;
+}
+
+.moment .text p {
+    font-size: 16px;
+    color: #444;
+}
+
+.moment .image {
+    flex: 1;
+}
+
+.moment .image img {
+    width: 50%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+    .moment {
+        flex-direction: column;
+    }
+
+    .moment:nth-child(even) {
+        flex-direction: column;
+    }
+}
