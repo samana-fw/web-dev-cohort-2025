@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    {font-family:'Inter',sans-serif}
+}
+
+body {
+    background: linear-gradient(to right, #d4cbb5, #f7f7f7);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.navbar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #ff6b5a;
+    color: white;
+}
+
+.hero-image img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Top List */
+.top-list {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 220px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Fries */
+.fries {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px;
+}
+
+.fries img {
+    width: 300px;
+    border-radius: 20px;
+}
