@@ -1,1 +1,279 @@
-Hi,How are you?
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information for Character Set and Responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Mazar</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://ui-avatars.com/api/?name=MS&background=48c1a0&color=000&font-size=0.5&bold=true&rounded=true">
+    
+    <!-- Google Fonts Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="h.css">
+</head>
+<body>
+
+    <!-- ================= HEADER / NAVIGATION ================= -->
+    <nav class="top-nav">
+        <div class="nav-bar">
+            <div class="site-logo">
+                <div class="ms-badge">M<span>S</span></div>
+                <div class="logo-name">Mazar-e-<span>Sharif</span></div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="attraction.html">Attractions</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#Updates">Updates</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="main-hero" id="home">
+        <div class="main-box">
+            
+            <!-- Left Side: Text Content -->
+            <div class="left-side">
+                <h1 class="main-title">
+                    <span class="anim-word" style="color: black;">Welcome</span> 
+                    <span class="anim-word" style="color: black;">to</span> <br> 
+                    <span class="anim-word-special">Mazar-e-Sharif</span>
+                </h1>
+                <p class="main-text">
+                    Experience the sublime architecture of the Blue Mosque and the 
+                    unmatched hospitality of the historic Balkh province. Explore the 
+                    timeless beauty of Mazar-e-Sharif, where ancient history meets vibrant culture.
+                </p>
+                
+                <a href="#about" class="go-btn">
+                    Explore More <span class="circle-icon">→</span>
+                </a>
+            </div>
+
+            <!-- Right Side: Image Slider (CSS Logic) -->
+            <div class="right-side">
+                <div class="oval-shape">
+                    <!-- Hidden Radio Buttons for Slider Logic -->
+                    <input type="radio" name="hero-slide" id="slide1" checked hidden>
+                    <input type="radio" name="hero-slide" id="slide2" hidden>
+                    <input type="radio" name="hero-slide" id="slide3" hidden>
+
+                    <div class="image-slider">
+                        <img src="mazar-mosque.jpeg" class="img-slide" alt="Mazar Blue Mosque">
+                        <img src="ancient-balkh.jpeg" class="img-slide" alt="Ancient Balkh">
+                        <img src="mazar-spring.jpeg" class="img-slide" alt="Spring in Mazar">
+                    </div>
+
+                    <!-- Slider Navigation Arrows -->
+                    <div class="hero-nav">
+                        <div class="controls s1">
+                            <label for="slide3" class="arrow left-arrow">←</label>
+                            <label for="slide2" class="arrow right-arrow">→</label>
+                        </div>
+                        <div class="controls s2">
+                            <label for="slide1" class="arrow left-arrow">←</label>
+                            <label for="slide3" class="arrow right-arrow">→</label>
+                        </div>
+                        <div class="controls s3">
+                            <label for="slide2" class="arrow left-arrow">←</label>
+                            <label for="slide1" class="arrow right-arrow">→</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= EXPLORE / CATEGORIES SECTION ================= -->
+    <section class="explore-modern-section" id="categories">
+        <div class="container-title" style="text-align: center; margin-bottom: 50px;">
+            <h2 class="main-subtitle">Explore <span>Mazar-e-Sharif</span></h2>
+        </div>
+
+        <div class="explore-vibe-grid">
+            <!-- Card 1: Attractions -->
+            <a href="attractions.html" class="vibe-card">
+                <img src="mazar-attractions.jpeg" alt="Attractions">
+                <div class="vibe-overlay">
+                    <div class="vibe-info">
+                        <h3>Top Attractions</h3>
+                        <p>Ancient History & Icons</p>
+                        <span class="vibe-arrow">→</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 2: Food -->
+            <a href="food.html" class="vibe-card">
+                <img src="mazar-food.jpeg" alt="Food">
+                <div class="vibe-overlay">
+                    <div class="vibe-info">
+                        <h3>Traditional Food</h3>
+                        <p>Flavors of Northern Afghan</p>
+                        <span class="vibe-arrow">→</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 3: Gallery -->
+            <a href="gallery.html" class="vibe-card">
+                <img src="park.jpeg" alt="Gallery">
+                <div class="vibe-overlay">
+                    <div class="vibe-info">
+                        <h3>City Gallery</h3>
+                        <p>Moments Captured in Mazar</p>
+                        <span class="vibe-arrow">→</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="about-container-section" id="about">
+        <div class="about-box">
+            <div class="about-content-wrapper">
+                <span class="section-badge">History / Culture</span>
+                <h1 class="about-title">Mazar-e-Sharif: <span>The Noble Shrine</span></h1>
+                
+                <div class="about-grid">
+                    <div class="about-text-box">
+                        <p class="about-p">
+                            Mazar-e-Sharif stands as the crowning jewel of Northern Afghanistan, a city where history breathes through the turquoise tiles of the Great Blue Mosque. As the capital of Balkh province, it is not merely a city but a spiritual center that has drawn travelers for centuries.
+                        </p>
+                        <p class="about-p">
+                            Often called the "Noble Shrine," it is widely believed to be the burial site of Ali ibn Abi Talib. The city serves as a living museum, blending over 2,500 years of civilization with a vibrant, modern culture. From the ancient walls of Balkh to the bustling bazaars of today, Mazar offers an unforgettable journey through time.
+                        </p>
+                    </div>
+                    
+                    <div class="about-features">
+                        <!-- Feature 1 -->
+                        <div class="feature-item">
+                            <span class="feature-icon">🏛️</span>
+                            <div>
+                                <h4>History</h4>
+                                <p>Over 2,500 years of recorded civilization and heritage.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div class="feature-item">
+                            <span class="feature-icon">🎨</span>
+                            <div>
+                                <h4>Culture</h4>
+                                <p>Rich traditions, beautiful carpets, and world-class hospitality.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div class="feature-item">
+                            <span class="feature-icon">✨</span>
+                            <div>
+                                <h4>Spirituality</h4>
+                                <p>Home to the sacred Blue Mosque, a site of peace and pilgrimage.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= NEWS / UPDATES SECTION ================= -->
+    <section class="mazar-news-section" id="Updates">
+        <div class="news-title-box">
+            <h2 class="news-main-title">Mazar <span>Updates</span></h2>
+        </div>
+
+        <div class="news-flex-container">
+            <!-- News Card 1 -->
+            <div class="news-card-single">
+                <div class="news-img-box">
+                    <img src="blue-mosqe.jpeg" alt="Mazar Mosque">
+                </div>
+                <div class="news-info-box">
+                    <h4>Blue Mosque Events</h4>
+                    <p>Check the latest religious and cultural ceremonies at the Shrine.</p>
+                    <a href="https://www.google.com/search?q=Mazar-e-Sharif+Blue+Mosque+news+2026" target="_blank" class="news-link-btn">Search Google</a>
+                </div>
+            </div>
+
+            <!-- News Card 2 -->
+            <div class="news-card-single">
+                <div class="news-img-box">
+                    <img src="mazar-spring.jpeg" alt="Festival">
+                </div>
+                <div class="news-info-box">
+                    <h4>Nowruz 2026 News</h4>
+                    <p>Stay updated with the latest Guli Surkh festival preparations.</p>
+                    <a href="https://www.google.com/search?q=Nowruz+Mazar-e-Sharif+2026+updates" target="_blank" class="news-link-btn">Search Google</a>
+                </div>
+            </div>
+
+            <!-- News Card 3 -->
+            <div class="news-card-single">
+                <div class="news-img-box">
+                    <img src="travel guide.jpeg" alt="Balkh Travel">
+                </div>
+                <div class="news-info-box">
+                    <h4>Balkh Travel Guide</h4>
+                    <p>Latest Google results for traveling and safety in Balkh province.</p>
+                    <a href="https://www.google.com/search?q=travel+to+Mazar-e-Sharif+news+2026" target="_blank" class="news-link-btn">Search Google</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer" id="footer">
+        <div class="footer-container">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <div class="site-logo">
+                    <div class="ms-badge">M<span>S</span></div>
+                    <div class="logo-name">Mazar-e-<span>Sharif</span></div>
+                </div>
+                <p class="footer-bio">
+                    The official tourism guide to the heart of Northern Afghanistan. 
+                    Discover the history, culture, and beauty of the Noble Shrine.
+                </p>
+            </div>
+
+            <!-- Team Column -->
+            <div class="footer-links">
+                <h4>Mazar Team</h4>
+                <ul class="team-list">
+                    <li><strong>Farkhonda Komak:</strong> Home page Section</li>
+                    <li><strong>Adela:</strong> Attractions Section</li>
+                    <li><strong>Freshta:</strong> Food Section</li>
+                    <li><strong>Nazi:</strong> Gallery Section</li>
+                </ul>
+            </div>
+
+            <!-- Explore Links Column -->
+            <div class="footer-links">
+                <h4>Explore Provinces</h4>
+                <ul>
+                    <li><a href="#">Kabul Guide</a></li>
+                    <li><a href="#">Herat Guide</a></li>
+                    <li><a href="#">Badakhshan Guide</a></li>
+                    <li><a href="#">Bamyan Guide</a></li>
+                    <li><a href="#">Ghazni Guide</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tourism Afghanistan - Collaborative Group Project.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
