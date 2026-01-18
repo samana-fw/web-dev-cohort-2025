@@ -84,10 +84,8 @@ main .hero {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(
-      rgba(58, 52, 52, 0.2),
-      rgba(56, 50, 50, 0.2)
-    ),
+  background-image:
+    linear-gradient(rgba(58, 52, 52, 0.2), rgba(56, 50, 50, 0.2)),
     url("../Ghazni/images/غزنی/majestic-mosque-islamic-new-year-celebration-with-fantasy-architecture\ \(1\).jpg");
   background-position: center;
 }
@@ -120,7 +118,7 @@ main .hero {
   border-radius: 5px;
   cursor: pointer;
   position: relative;
-  right: 27.5rem;
+  right: 24.4rem;
 }
 
 .btn:hover {
@@ -249,7 +247,8 @@ main .hero {
 .update {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../Ghazni/images/غزنی/cave-town-zelve-valley-cappadocia-turkey.jpg);
   background-position: center;
   background-repeat: no-repeat;
