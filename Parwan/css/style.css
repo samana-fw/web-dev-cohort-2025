@@ -1,160 +1,154 @@
-body {
+* {
     box-sizing: border-box;
-    overflow-x: hidden;
-    background-color: #fbf9f5;
-    }
-    .navbar {
-        z-index: 1000;
-    }
-
-.navbar-brand {
-        font-family: 'Vazirmatn';
-        font-size: 24px;
-        font-weight: bold;
-        }
-.navbar-nav .nav-item .nav-link:hover {
-    color: #ff6b5a;
 }
-.form .btn {
-    background-color: #ff6b5a;
-    width: 130px;
-    color: white;
-    border-radius: 30px;
+body {
+    margin: 0;
+    padding: 0;
+
 }
 
-.form .search {
-    border-radius: 50px;
-    padding: 3px 6px;
-    box-shadow: 0px 0px 1px 3px rgb(248, 245, 245);
-    outline: none;
-    border: none;
-    height: 35px;
+.section {
+    background: linear-gradient(to right, #e2e9f5, rgb(241, 240, 240));
 }
-
-.form .search:focus {
-    border: 2px #1f6be1 solid;
+.section0 {
+    background: linear-gradient(to right, white, #f1ebc2);
 }
-
-/* section2 */
-/* .section2 {
-    margin-top: 50px;
-}
-.section2 .section2COl1 {
-    margin-left: 30px;
-}
-
-.section2 .section2COl1 h2 {
-    font-size: 50px;
-    font-weight: 500;
-}
-.section2 .section2COl1 p {
-    width: 400px;
-    font-size: 15px;
-}
-
-.section2 .section2COl1 button {
-    background-color: #1f6be1;
-    padding: 10px;
-    width: 140px;
-    border: none;
-    border-radius: 30px;
-    color: white;
-}
-
-.section2row2 img {
-    height: 400px;
-    border-radius: 30px;
-}
-
-.section2row2 #img1 {
-    max-height: 300px;
-}
-*/ .section1 {
-    background-image: url('../images/j.jpeg');
+.section1 {
+    background-image: url('../images/Hero.png');
+    width: 100%;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    position: relative;
-    color: white;
-
+    object-fit: cover;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
-/* .section1 .overlay {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- background: rgba(0, 0, 0, 0.3);
- z-index: 1;
- /* فیلتر سیاه */
-
-}
-
-*/
-
-.hero-image img {
-    display: block;
+.section1 .navbar {
+    background-color: black;
     width: 100%;
-    height: auto;
+    position: fixed;
+    height: 70px;
+    border-bottom: 1px white solid;
+    z-index: 1000;
 }
 
-.hero-image .overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    /* فیلتر دلخواه */
-    border-radius: 15px;
-    /* اگر میخوای گوشه گرد باشد مثل عکس */
-}
-.section1 .container-fluid,
-.section1 .header {
-    position: relative;
-    z-index: 2;
+.navbar * {
+    color: white;
+    font-family: 'Bodoni MT';
+    font-size: 30px
 }
 
-.header .row .col {
+.navbar #brand {
+    /* background: linear-gradient(to right, #1f6b1f, #ff6b5a, #1f6ae1, red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-size: 50px;
+    font-weight: bold;
+}
+.navbar .nav-item:hover {
+    text-decoration: underline solid 3px white;
+    color: white;
+}
+
+.navbar .navbar-nav {
+    margin-left: 30px;
+}
+
+.navbar .nav-item a:hover {
+    color: white;
+}
+
+.form-control {
+    background-color: #222;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 1px white;
+    border-radius: 30px;
+}
+
+.section1 header h1 {
+    font-size: 50px;
     position: relative;
-    left: 100px;
     top: 100px;
-
+    left: 50px;
+    width: 600px;
+    color: white;
+    font-size: bold;
+    font-weight: bold;
 }
+.section1 header .headeBtn {
+    position: relative;
+    top: 100px;
+    left: 50px;
+    padding: 10px;
+    width: 550px;
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    border-radius: 30px;
+    color: #1f6ae1;
+    }
 
-.header .row .col h1 {
-    font-family: 'Calisto MT';
-    font-size: 70px;
+/* section2 */
+.section2 {
+    margin-top: 100px;
 }
-
-.header .row .col p {
-    width: 350px;
-}
-
-.header .firstCol {
-    margin-left: 220px;
-    filter: brightness(110%);
-}
-
-.section1 h1 {
-    text-align: center;
-    font-size: 120px;
-    font-family: "Eric ITC";
-    padding: 70px 0px;
+.section2 h1 {
+    font-size: 40px;
+    color: black;
     font-weight: bold;
 }
 
-.section2 {
-    font-family: 'Goudy Old style';
-    color: brown;
-    height: 400px;
+   .section2 .col p {
+       font-size: 23px;
 }
 
-.section2 h1 {
-    font-size: 40px;
-    font-family: 'Goudy Old style';
-    color: brown;
+/* section3 */
+.section3 {
+    margin-top: 40px;
 }
 
-.grid {
-    display: flex;
+.section3 h1 {
+    font-weight: bold;
+}
+.section3 .grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 .grid .card {
+    height: 100px;
+    padding: 10px;
+    box-shadow: 0px 10px orange;
+    transition: 0.4s ease;
+}
+
+.section3 .grid .card:hover {
+    border: 4px solid black;
+    box-shadow: none;
+    padding: 10px 2px;
+}
+
+.section3 .grid .card h5 {
+    font-size: 23px;
+}
+
+/* section4 */
+.section4 .col {
+    border-radius: 10px;
+}
+.section4 .card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section4 .card h3,
+p {
+    padding: 10px;
 }
