@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+}
 .food-header{
     text-align:center;
 }
@@ -7,33 +15,34 @@
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.intro-content{
-    background: rgb(0 4 , 0, 0.3);
-    padding: 30px;
     text-align: center;
-    color: white;
-    border-radius: 10px;
+    color:#FFFFFF;
+    margin-bottom: 25px;
 }
-.intro-content h1{
-    font-size: 48px;
-    margin-bottom: 10px;
-    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+.intro h1{
+    font-size:48px;
+    margin-bottom:10px
 }
-.intro-content btn{
-    text-decoration: none;
-    color: #FFFFFF;
+.intro p{
+margin-bottom: 15px;
+}
+.intro a{
+    margin-top: 20px;
+    text-decoration:none;
+    color:#FFFFFF;
     padding: 12px 24px;
     border-radius: 6px;
-    font-weight:bold;
+    font-weight: bold;
+    background-color:#FF6B5A;
 }
-.intro-btn:hover{
-    background: #a93226;
+
+.intro a:hover{
+    background: #df5f54;
 }
 .food-container{
     justify-content: center;
@@ -45,6 +54,7 @@
     max-width: 1000px;
 }
 .food-card{
+    margin-top: 20px;
     text-align: center;
     border: 1px solid #ccc;
     padding: 20px;
@@ -77,6 +87,7 @@
     display: block;
 }
 .navbar{
+    background-color:#FF6B5A;
     display:flex;
     justify-content: flex-end;
     align-items: center;
@@ -92,11 +103,66 @@
 .nav-links a{
     text-decoration: none;
     font-size: 18px;
-    color: black;
+    color:white
 }
 .nav-links a:hover{
     text-decoration: underline;
 }
 .description{
     font-size: 20px;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: #FF6B5A;
+}
+.footerContainer{
+    width:100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    display:flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:10px;
+    background-color:white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size:2em;
+    color:#FF6B5A;
+    opacity: 0.9;
+}
+.socialIcons a:hover {
+    background-color:#FF6B5A;;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    background-color:white;
+    transition:0.5s;
+}
+footer{
+    margin-top:20px;
+}
+.footerNav{
+    margin:30px 0;
+}
+.footerNav ul{
+display:flex;
+justify-content:center;
+list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size:1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity:1;
+
 }
