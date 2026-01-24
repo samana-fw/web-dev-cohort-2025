@@ -262,3 +262,11 @@ p {
 .section8 {
     margin-top: 40px;
 }
+.section8 .card {
+    background-color: black;
+    color: white;
+}
+
+.card-footer {
+    background-color: white;
+}
