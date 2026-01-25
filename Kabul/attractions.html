@@ -4,10 +4,359 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Document</title>
+
+    <style>
+:root {
+  --deep-navy: #0B1F3B;
+  --ocean-blue: #1F6AE1;
+  --soft-aqua: #6FD1C7;
+  --sand-beige: #F3ECDC;
+  --sunset-coral: #FF6B5A;
+  --palm-green: #2FA36B;
+  --cloud-white: #FFFFFF;
+  --slate-gray: #6B7280;
+}
+
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--cloud-white);
+  color: var(--slate-gray);
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 95vh;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(11,31,59,0.25),
+      rgba(11,31,59,0.6)
+    ),
+    url("images/skærmbillede-2023-12-17-kl.-14.41.00.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.hero-box {
+  max-width: 650px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  padding: 50px 55px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+.hero-tag {
+  display: inline-block;
+  background: var(--soft-aqua);
+  color: var(--deep-navy);
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.hero-box h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-box p {
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 35px;
+  color: #f1f1f1;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 36px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn.primary {
+  background: var(--sunset-coral);
+  color: white;
+}
+
+.btn.primary:hover {
+  background: var(--palm-green);
+}
+
+.btn.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background: white;
+  color: var(--deep-navy);
+}
+
+.attractions {
+  padding: 100px 10%;
+}
+
+.attractions h2 {
+  text-align: center;
+  font-size: 36px;
+  color: var(--deep-navy);
+  margin-bottom: 80px;
+}
+
+.place-card {
+  display: flex;
+  gap: 45px;
+  background: var(--sand-beige);
+  padding: 40px;
+  border-radius: 25px;
+  margin-bottom: 90px;
+}
+
+.place-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.place-card img {
+  width: 45%;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.place-info {
+  width: 55%;
+}
+
+.place-info h3 {
+  font-size: 30px;
+  color: var(--deep-navy);
+  margin-bottom: 18px;
+}
+
+.place-info p {
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.details-btn {
+  display: inline-block;
+  margin-top: 18px;
+  background: var(--sunset-coral);
+  color: white;
+  padding: 13px 34px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.details-btn:hover {
+  background: var(--palm-green);
+}
+
+
+footer {
+  background: var(--deep-navy);
+  color: white;
+  text-align: center;
+  padding: 22px;
+}
+
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 0 7%;
+    justify-content: center;
+  }
+
+  .hero-box {
+    padding: 40px;
+  }
+
+  .hero-box h1 {
+    font-size: 38px;
+  }
+
+  .place-card,
+  .place-card.reverse {
+    flex-direction: column;
+  }
+
+  .place-card img,
+  .place-info {
+    width: 100%;
+  }
+}
+
+
+
+        
+    </style>
 </head>
 <body>
-    this is attractions page!
+    
+
+
+<header class="hero">
+  <div class="hero-box">
+    <span class="hero-tag">Explore Kabul</span>
+
+    <h1>
+      Discover the Cultural<br>
+      Heart of Afghanistan
+    </h1>
+
+    <p>
+      Kabul is a city rich in history, culture, and natural beauty.
+      This page highlights the most famous historical, cultural,
+      and recreational places that represent the identity of Kabul.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#attractions" class="btn primary">View Attractions</a>
+      <a href="#attractions" class="btn secondary">Learn More</a>
+    </div>
+  </div>
+</header>
+
+<section id="attractions" class="attractions">
+  <h2>Famous Places in Kabul</h2>
+
+  <!-- 1. Kabul Museum -->
+  <div class="place-card">
+    <img src="images/national-museum.webp" alt="Kabul Museum">
+    <div class="place-info">
+      <h3>Kabul Museum</h3>
+      <p>The Kabul Museum preserves thousands of artifacts representing ancient civilizations, including Kushan, Greco-Bactrian, and Islamic periods.</p>
+      <p>It plays a vital role in protecting heritage and educating students and researchers about Afghanistan’s history.</p>
+      <a href="museum.html" class="details-btn">Read More</a>
+    </div>
+  </div>
+
+  <!-- 2. Darul Aman Palace -->
+  <div class="place-card reverse">
+    <img src="images/DARUL AMAN.jpg" alt="Darul Aman Palace">
+    <div class="place-info">
+      <h3>Darul Aman Palace</h3>
+      <p>Darul Aman Palace was built in early 20th century as part of modernization. European and Afghan architectural elements are combined.</p>
+      <p>It stands as a national symbol representing political and cultural transformation.</p>
+      <a href="darulaman.html" class="details-btn">Read More</a>
+    </div>
+  </div>
+
+  <!-- 3. Qargha Lake -->
+  <div class="place-card">
+    <img src="images/very-good-place-for-the.jpg" alt="Qargha Lake">
+    <div class="place-info">
+      <h3>Qargha Lake</h3>
+      <p>A popular recreational destination with natural scenery and fresh air, ideal for families and relaxation.</p>
+      <p>The lake attracts visitors seeking outdoor activities away from city life.</p>
+      <a href="qargha.html" class="details-btn">Read More</a>
+    </div>
+  </div>
+
+  <!-- 4. Shah Do Shamshira Mosque -->
+  <div class="place-card reverse">
+    <img src="images/Places-to-visit-in-Kabul-Pul-e-Khishti-Mosque-1024x683.jpg" alt="Shah Do Shamshira Mosque">
+    <div class="place-info">
+      <h3>Shah Do Shamshira Mosque</h3>
+      <p>An iconic mosque in Kabul, distinguished by unique architecture and central location.</p>
+      <p>It holds religious and historical significance and is an important spiritual center.</p>
+      <a href="shahdoshamshira.html" class="details-btn">Read More</a>
+    </div>
+  </div>
+
+  <!-- 5. Karte Sakhi Shrine -->
+  <div class="place-card">
+    <img src="images/FP5valWXsAs7I5q.jpg" alt="Karte Sakhi Shrine">
+    <div class="place-info">
+      <h3>Karte Sakhi Shrine</h3>
+      <p>One of Kabul’s sacred religious sites, famous for cultural and religious gatherings.</p>
+      <p>It represents spiritual devotion and plays a key role in community life.</p>
+      <a href="sakhi.html" class="details-btn">Read More</a>
+    </div>
+  </div>
+
+  <!-- 6. Bibi Mahro Hill -->
+  <div class="place-card reverse">
+    <img src="images/7949333336_3497193847_b.jpg" alt="Bibi Mahro Hill">
+    <div class="place-info">
+      <h3>Bibi Mahro Hill</h3>
+      <p>Scenic viewpoint offering panoramic views of Kabul city, popular for photography and nature walks.</p>
+      <p>The hill highlights the natural beauty surrounding the capital.</p>
+      <a href="bibimahro.html" class="details-btn">Read More</a>
+    </div>
+  </div>
+
+  <!-- 7. Pul-e-Khishti Mosque -->
+  <div class="place-card">
+    <img src="images/EWwOWq0WsAAjX1s.jpg" alt="Pul-e-Khishti Mosque">
+    <div class="place-info">
+      <h3>Pul-e-Khishti Mosque</h3>
+      <p>One of the largest mosques in Kabul, central for worship and religious education.</p>
+      <p>Known for its historical significance and architectural presence.</p>
+      <a href="pulkhishti.html" class="details-btn">Read More</a>
+    </div>
+  </div>
+
+  
+  <div class="place-card reverse">
+    <img src="images/abdul rahman mosque.jpg" alt="Abdul Rahman Khan Mosque">
+    <div class="place-info">
+      <h3>Abdul Rahman Khan Mosque</h3>
+      <p>A modern mosque reflecting contemporary Islamic architecture in Kabul.</p>
+      <p>It functions as a place of worship and a cultural symbol in the city.</p>
+      <a href="abdulrahman.html" class="details-btn">Read More</a>
+    </div>
+  </div>
+
+  <!-- 9. Babur Garden -->
+  <div class="place-card">
+    <img src="images/e4de30948fd44789cb1a1297e551a809.jpg" alt="Babur Garden">
+    <div class="place-info">
+      <h3>Babur Garden</h3>
+      <p>Historic park and burial place of Emperor Babur, combining history with natural beauty.</p>
+      <p>One of Kabul’s most visited tourist attractions.</p>
+      <a href="babur.html" class="details-btn">Read More</a>
+    </div>
+  </div>
+
+  <!-- 10. TV Hill (Koh-e-Asmai) -->
+  <div class="place-card reverse">
+    <img src="images/afternoon-view-across-downtown-kabul-600nw-2508085663.webp" alt="TV Hill Kabul">
+    <div class="place-info">
+      <h3>TV Hill (Koh-e-Asmai)</h3>
+      <p>One of the highest points in Kabul, offering spectacular city views.</p>
+      <p>Important landmark for visitors interested in geography and urban landscapes.</p>
+      <a href="tvhill.html" class="details-btn">Read More</a>
+    </div>
+  </div>
+
+</section>
+
+
+<footer>
+  <p>© 2026 Kabul Attractions – Academic Project</p>
+</footer>
 </body>
 </html> 
  
