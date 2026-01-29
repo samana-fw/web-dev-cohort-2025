@@ -1,0 +1,53 @@
+:root {
+    --primary: #0b1f3b;
+    --secondary: #6fd1c7;
+    --accent: #f3ecdc;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    justify-content: space-between; /* h1 سمت چپ، nav سمت راست */
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    padding: 20px 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;  /* اندازه تیتر هدر */
+}
+
+header h2 {
+    text-align: left;
+    margin: 0;
+    font-size: 16px;
+}
+
+nav {
+    text-align: right;
+    gap: 40px;        /* فاصله بین لینک‌ها */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
