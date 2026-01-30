@@ -10,13 +10,12 @@ body {
     color: #222;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 8%;
-    background: #0f766e;
+    background: #2FA36B;
     color: white;
 }
 
@@ -32,7 +31,6 @@ body {
     font-weight: bold;
 }
 
-/* Hero */
 .hero {
     height: 80vh;
     background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
@@ -56,14 +54,13 @@ body {
 .hero button {
     padding: 12px 28px;
     border: none;
-    background: #14b8a6;
+    background: #6FD1C7;
     color: white;
     font-size: 16px;
     border-radius: 6px;
     cursor: pointer;
 }
 
-/* Highlights */
 .highlights {
     padding: 60px 8%;
     display: grid;
@@ -97,12 +94,11 @@ body {
     margin-bottom: 20px;
     padding: 8px 20px;
     border: none;
-    background: #0f766e;
+    background: #2FA36B;
     color: white;
     border-radius: 5px;
 }
 
-/* About */
 .about {
     padding: 60px 8%;
     display: grid;
@@ -116,7 +112,6 @@ body {
     border-radius: 10px;
 }
 
-/* News */
 .news {
     padding: 60px 8%;
 }
@@ -157,21 +152,19 @@ body {
     margin: 0 15px 15px;
     padding: 8px 18px;
     border: none;
-    background: #14b8a6;
+    background: #6FD1C7;
     color: white;
     border-radius: 5px;
 }
 
-/* Footer */
 footer {
-    background: #0f766e;
+    background: #6B7280;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
 }
 
-/* Responsive */
 @media (max-width: 800px) {
     .about {
         grid-template-columns: 1fr;
