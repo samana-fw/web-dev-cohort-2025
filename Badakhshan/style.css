@@ -4,26 +4,26 @@
     box-sizing: border-box;
 }
 
-body {
+.ixbody {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f3ecdc;
     color: #0b1f3b;
     line-height: 1.6;
-
-    nav {
+    }
+    .ixnav {
         position: absolute;
         top: 20px;
         right: 60px;
     }
 
-    nav a {
+    .ixnav a {
         color: #0b1f3b;
         text-decoration: none;
         font-weight: bold;
         margin-left: 25px;
     }
 
-    nav a:hover {
+    .ixnav a:hover {
         text-decoration: underline;
         color: #ff6b5a;
         font-size: 18px;
@@ -34,9 +34,9 @@ body {
         text-align: center;
     }
 
-    .hero {
+    .ixhero {
         height: 100vh;
-        background-image: url("https://t4.ftcdn.net/jpg/03/05/51/41/360_F_305514159_SXBVgQfdp4VKEIPZgX1sdhmFS30oeohw.jpg");
+        background-image: url("https://cdn.nody.ir/files/2024/12/25/nody-%D8%B4%D9%87%D8%B1-%D9%81%DB%8C%D8%B6-%D8%A2%D8%A8%D8%A7%D8%AF-%D9%85%D8%B1%DA%A9%D8%B2-%D9%88%D9%84%D8%A7%DB%8C%D8%AA-%D8%A8%D8%AF%D8%AE%D8%B4%D8%A7%D9%86-%D8%B9%DA%A9%D8%B3---1735129996.jpg");
         background-size: cover;
         background-position: center;
         display: flex;
@@ -46,138 +46,198 @@ body {
         text-align: center;
         padding: 0 20px;
     }
+    .ixhero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+        rgb(58, 175, 247),
+        rgba(83, 252, 148, 0.007)
+        );
+    }
+    .ixhero > * {
+        position: relative;
+        z-index: 1;
+    }
 
-    .hero h1 {
-        font-size: 48px;
+
+
+
+    .ixhero h1 {
+        font-size: 70px;
         margin-bottom: 15px;
-        color: #0b1f3b;
-        text-shadow: #f3ecdc;
+        color: white;
     }
 
-    .hero p {
+    .ixhero p {
         font-size: 18px;
-        color: #f3ecdc;
-        max-width: 600px;
-        margin-bottom: 30px;
-    }
-
-    .btn {
-        background-color: #f3ecdc;
-        color: #0b1f3b;
-        padding: 10px 20px;
-        text-decoration: none;
-        font-size: 20px;
-        margin-top: 15px;
-        display: inline-block;
-        border-radius: 5px;
-    }
-
-    .btn:hover {
-        color: #ff6b5a;
-        text-decoration: underline;
-        font-size: 25px;
-    }
-
-    .about {
-        padding: 40px 10%;
-        background-color: #f3ecdc;
-    }
-
-    .cards a {
-        background-color: #0b1f3b;
-        padding: 10px 20px;
-        text-decoration: none;
-        font-size: 20px;
-        margin-top: 15px;
-        display: inline-block;
-        border-radius: 5px;
-        color: #f3ecdc;
-        text-decoration: none;
+        color: white;
+        font-style: oblique;
         font-weight: bold;
-        margin-left: 25px;
+        max-width: 700px;
+        border-radius: 20px;
+        border-color: #f3ecdc;
+        border-style:groove;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .ixbtn {
+        color: white;
+        padding: 2px 20px;
+        text-decoration: none;
+        font-size: 20px;
+        margin-top: 15px;
+        display: inline-block;
+        border-radius: 10px;
+        border-color: #f3ecdc;
+        border-style: double;
+        margin-top: 200px;
+        width: 300px;
+        background-color: #6fa36b;
     }
 
-    .cards a:hover {
+    .ixbtn:hover {
+        background-color: #0b1f3b;
         text-decoration: underline;
-        color: #ff6b5a;
-        font-size: 18px;
+        color: #f3ecdc;
     }
 
-    .contact {
-        padding: 40px;
+    .ixabout {
+        padding: 40px 10%;
+        background-color:#bfeabb;
+        margin: 10px 0;
+        
+    }
+    
+    .ixbox {
         display: flex;
         justify-content: center;
-        background-color: #0b1f3b;
+        flex-wrap: wrap;
+        background-color: #f3ecdc;
+        width: 900px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        margin: 40px;
+    }
+    .ixbox img {
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
     }
 
-    .contact form {
+    .ixmemory {
+        background-color: #6fa36b;
+        padding: 40px 10%;
+        margin: 10px 0;
+    }
+
+
+    .ixmemory #visitor {
+        font-style: italic;
+        margin: 10px 0;
+    }
+
+    .ixtrails {
+        background-color: #bfeabb;
+        margin: 10px 0;
+    }
+    .ixcard-container {
+        margin: 40px 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .ixcard {
+        background-color: #f3ecdc;
+        width: 250px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .ixcard img {
+        width: 100%;
+        height: 150px;
+        border-radius: 6px;
+
+    }
+
+    .ixcard a {
+        text-decoration: none;
+        color: #0b1f3b;
+    }
+
+    .ixfooter {
+        background-color: #6fa36b;
+        color: white;
+        padding: 60px 20px 30px;
         display: flex;
         flex-direction: column;
-        max-width: 500px;
+        align-items: center;    
+        text-align: center;
     }
 
-    .contact label {
-        margin-top: 15px;
-        margin-bottom: 5px;
-        color: #f3ecdc;
+    .ixsharememory {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 40px;
+    }
+
+    .ixsharememory h2 {
+        margin-bottom: 20px;
+        color: #FFFFFF;
+    }
+
+    .ixsharememory form {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
-    .contact input,
-    .contact textarea {
-        padding: 10px;
-        border: 1px solid #f3ecdc;
-        border-radius: 5px;
-    }
-
-    footer {
-        background-color: #0b1f3b;
-        color: #f3ecdc;
-        text-align: center;
-        padding: 20px;
+    .ixsharememory label {
+        width: 100%;
+        text-align: left;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        color: white;
         font-size: 14px;
     }
 
-    @media (max-width: 768px) {
-        .hero {
-            height: 80vh;
-            padding: 0 15px;
-        }
-
-        .hero h1 {
-            font-size: 32px;
-        }
-
-        .hero p {
-            font-size: 15px;
-        }
-
-        nav {
-            position: static;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        nav a {
-            margin: 10px;
-        }
-
-        .cards {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .cards a {
-            width: 90%;
-            text-align: center;
-        }
-
-        .contact {
-            padding: 60px 20px;
-        }
-
-        .contact form {
-            max-width: 100%;
-        }
+    .ixsharememory input,
+    .ixsharememory textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 6px;
+        border: none;
+        margin-bottom: 10px;
+        font-size: 14px;
     }
-    
+
+    .ixsharememory input[type="submit"] {
+        background-color: #1F6AE1;
+        color: #FFFFFF;
+        padding: 12px 30px;
+        margin-top: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .ixsharememory input[type="submit"]:hover {
+        background-color: #FF6B5A;
+    }
+
+    .ixfooter p {
+        font-size: 13px;
+        color: white;
+    }
+
+
+
+
+
+
