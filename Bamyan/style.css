@@ -11,7 +11,7 @@ body {
 }
 
 /* navbar */
-.navbar {
+.att-navbar {
   background: #1f2933;
   color: white;
   padding: 20px;
@@ -21,35 +21,35 @@ body {
 }
 
 
-.navbar a {
+.att-navbar a {
   color: white;
   margin-left: 15px;
   text-decoration: none;
 }
 
-.navbar a.active {
+.att-navbar a.active {
   border-bottom: 2px solid white;
 }
 
 /* section */
-.section {
+.att-section {
   padding: 40px 20px;
 }
 
-.section-title {
+.att-section-title {
   text-align: center;
   margin-bottom: 40px;
 }
 
 /* cards */
-.card-container {
+.att-card-container {
   display: flex;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.card {
+.att-card {
   background: white;
   width: 300px;
   border-radius: 8px;
@@ -58,27 +58,27 @@ body {
   transition: transform 0.3s;
 }
 
-.card:hover {
+.att-card:hover {
   transform: translateY(-8px);
 }
 
-.card img {
+.att-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.card h3 {
+.att-card h3 {
   margin: 15px;
 }
 
-.card p {
+.att-card p {
   margin: 0 15px 20px;
   font-size: 14px;
 }
 
 /* footer */
-.footer {
+.att-footer {
   text-align: center;
   padding: 20px;
   background: #1f2933;
