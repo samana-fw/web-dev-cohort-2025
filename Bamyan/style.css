@@ -11,25 +11,25 @@ body {
 }
 
 /* navbar */
-.navbar {
-  background: #1F6AE1; 
+.gallery-navbar {
+  background: #0B1F3B;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
+.gallery-logo {
   color: white;
 }
 
-.navbar a {
+.gallery-navbar a {
   color: white;
   margin-left: 15px;
   text-decoration: none;
 }
 
-.navbar a.active {
+.gallery-navbar a.active {
   border-bottom: 2px solid #FF6B5A; 
 }
 
@@ -87,7 +87,7 @@ body {
 }
 
 /* footer */
-.footer {
+.gallery-footer {
   background: #0B1F3B;
   color: white;
   text-align: center;
