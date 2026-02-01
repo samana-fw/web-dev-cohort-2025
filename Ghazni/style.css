@@ -41,7 +41,7 @@ span {
   color: var(--fourth-color);
   font-size: 3.5rem;
 }
-.logo {
+.Index-logo {
   /* background-color: bisque; */
   margin: 0 4rem;
   color: var(--eight-color);
@@ -49,20 +49,20 @@ span {
   font-family: cursive;
 }
 
-.navbar {
+.Index-navbar {
   /* background-color: aquamarine; */
   margin: 0 14rem;
   width: 100vw;
 }
 
-.navbar nav ul {
+.Index-navbar nav ul {
   display: flex;
   flex-direction: row;
 }
-.navbar nav ul li {
+.Index-navbar nav ul li {
   list-style: none;
 }
-.navbar nav ul li a {
+.Index-navbar nav ul li a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -312,20 +312,20 @@ main .hero {
 
 /* footer start */
 
-footer {
+.Index-footer {
   background-color: var(--third-color);
   display: flex;
   justify-content: space-around;
   width: 100vw;
   height: 25vh;
 }
-footer .copy {
+.Index-footer .copy {
   margin-top: 2px;
   font-family: "Times New Roman", Times, serif;
   margin-top: 20px;
   font-size: 1.3rem;
 }
-footer .copy h3 .font {
+.Index-footer .copy h3 .font {
   color: var(--fourth-color);
   font-size: 2rem;
   font-family: cursive;
@@ -334,15 +334,18 @@ footer .copy h3 .font {
   color: #0b1f3b;
   position: relative;
   left: 4.7rem;
+  font-size: 35px;
+  font-family: cursive;
 }
 
-footer .links a,
+.Index-footer .links a,
 p {
   text-decoration: none;
   padding: 0 0.5rem;
   font-size: 1.6rem;
   font-family: "Times New Roman", Times, serif;
 }
+
 /* footer ends */
 
 /* Roina css codes end */
