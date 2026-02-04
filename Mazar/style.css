@@ -40,16 +40,30 @@
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+
 }
 
 .hero h1 {
     font-size: 40px;
+    color: #0b1f3b;
+    text-shadow: 2px 2px 8px rgba(17, 16, 16, 0.763);
 }
 
 .hero p {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #0b1f3b;
+    text-shadow: 1px 1px 6px rgba(17, 16, 16, 0.763);
+}
+
+.hero h1,
+.hero p {
+    position: relative;
+    z-index: 1;
 }
 
 /* Attractions */
@@ -84,10 +98,43 @@
     font-size: 14px;
 }
 
-/* Footer */
-footer {
-    background-color: #0b1f3b;
+/* FOOTER */
+.site-footer {
+    background-color:#0b1f3b;
     color: white;
+    padding: 80px 5% 40px;
+    border-radius: 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand { margin-bottom: 30px; }
+.footer-bio { color: #aaa; line-height: 1.8; font-size: 0.95rem; max-width: 350px; }
+
+.footer-links h4 {
+    font-family: var(--font-heading);
+    color: var(--aqua);
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+}
+
+.team-list, .footer-links ul { list-style: none; }
+.team-list li, .footer-links ul li { margin-bottom: 15px; color: #ccc; font-size: 0.9rem; }
+.team-list li strong { color: var(--white); display: block; font-weight: 700; margin-bottom: 2px;}
+.footer-links ul li a { text-decoration: none; color: #aaa; transition: 0.3s; }
+.footer-links ul li a:hover { color: var(--coral); }
+
+.footer-bottom {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
-    padding: 15px;
+    color: #666;
+    font-size: 0.85rem;
 }
