@@ -87,7 +87,7 @@ font-size:1.1rem;
     border-radius:15px;
     display:block;
 }
-.navbar {
+.navibar {
     background-color: #FF6B5A;
     display:flex;
     justify-content: space-between;
@@ -102,7 +102,7 @@ font-size:1.1rem;
     letter-spacing:1px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.nav-links{
+.navi-links{
     display: flex;
     flex:wrap;
     gap: 20px;
@@ -110,7 +110,7 @@ font-size:1.1rem;
     margin: 0;
     padding: 0;
 }
-.nav-links a{
+.navi-links a{
     text-decoration: none;
     font-size: 18px;
     color:white;
@@ -118,7 +118,7 @@ font-size:1.1rem;
     letter-spacing: 0.5px;
 }
 
-.nav-links a:hover{
+.navi-links a:hover{
     text-decoration: underline;
 }
 .description{
@@ -126,7 +126,7 @@ font-size:1.1rem;
     margin-bottom: 20px;
     padding: 10px;
 }
-footer{
+.food-footer{
     background-color:#f75442;
 }
 .footerContainer{
@@ -157,7 +157,7 @@ footer{
     background-color:white;
     transition:0.5s;
 }
-footer{
+.food-footer{
     margin-top:20px;
 }
 .footerNav{
