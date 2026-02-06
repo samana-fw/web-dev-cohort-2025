@@ -60,6 +60,7 @@ body {
   color: white;
 }
 .hero h1{
+
   font-size: 3rem;
   margin-bottom: 12px;
 }
@@ -114,6 +115,7 @@ body {
   padding: 8px 18px;
   border-radius: 5px;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 
 /* About */
@@ -172,11 +174,115 @@ body {
   background: #06326b;
   color: white;
   border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.places{
+  padding: 40px;
+}
+.places h2{
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+.places-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
 }
 
+.places-card{
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+}
+.places-card img{
+
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.places-card h3{
+  margin: 15px 0 10px;
+}
+.places-card p{
+  font-size: 14px;
+  color: black;
+  line-height: 1.6;
+}
+.places1 h2{
+  margin: 30px;
+  font-size: 2rem;
+}
+.places1 p{
+  margin: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.places-content{
+  margin: 30px;
+  line-height: 1.5;
+}
+.places2{
+  display: grid;
+  grid-template-columns: repeat( 3, 1fr);
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+}
+.places2 img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.end{
+  padding: 40px;
+}
+.end h2{
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+.end-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+  gap: 25px;
+}
+.end-card{
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+
+  
+}
+ .end-card img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px;
+}
+ .end-card h3{
+  margin: 15px 0 10px;
+ }
+
+ .end-card p{
+  font-size: 14px;
+  color: black;
+  line-height: 1.5;
+ }
 @media (max-width: 900px){
   .cards,
   .update-grid,
+  .places,
+  .places1,
+  .places2
   .about{
     flex-direction: column;
     align-items: center;
@@ -185,6 +291,7 @@ body {
     font-size: 2.2rem;
   }
 }
+
 .footer{
   background: #06326b;
   color: white;
