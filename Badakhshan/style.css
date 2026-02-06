@@ -218,7 +218,11 @@
     }
 
     .ixsharememory input[type="submit"] {
+<<<<<<< HEAD
         background-color: #0b1f3b;
+=======
+        background-color: #1F6AE1;
+>>>>>>> 8d2a10fd59be3163a3c742ce1dce05ee6243f3df
         color: #FFFFFF;
         padding: 12px 30px;
         margin-top: 15px;
