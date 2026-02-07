@@ -1,57 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Mazar-e-Sharif Attractions</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mazar Adventure</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">Mazar View</h2>
-            <ul>
-                <li><a href="#index.html">Home</a></li>
-                <li><a href="#attractions.html">Attractions</a></li>
-                <li><a href="#food.html">Food</a></li>
-                <li><a href="#gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- NAVBAR -->
+<header>
+  <nav class="nav">
+    <div class="logo">Mazar-e-Sharif</div>
+    <div class="menu">
+      <a href="#index.html">Home</a>
+      <a href="#attractions.html">Attractions</a>
+      <a href="#food.html">Food</a>
+      <a href="#gallery.html">Gallery</a>
+    </div>
+  </nav>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Discover the Beauty of Mazar-e-Sharif</h1>
-        <p>Explore history, culture, and natural beauty</p>
-        <a href="#attractions" class="hero-btn">Discover More</a>
-        
-    </section>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>VISIT MAZAR</h1>
+    <p>Explore history, culture, and natural beauty</p>
+    <a href="#attractions" class="btn">LEARN MORE</a>
+  </div>
+</section>
 
-    <!-- Attractions Section -->
-    <section class="attractions">
-        <div class="card">
-            <a href="images/1.jpg"><img src="images/1.jpg"></a>
-            <h3>Blue Mosque</h3>
-            <p>The Blue Mosque is the most famous historical place in Mazar-e-Sharif. Known for its spiritual and cultural significance, it attracts visitors who wish to enjoy its beautiful architecture and serene surroundings.</p>
-        </div>
+<!-- PLANNING -->
+<section class="planning" id="attractions">
+  <div>
+    <h2>Tomb of Rabia Balkhi</h2>
+    <p>The Tomb of Rabia Balkhi (also called the Shrine of Rabia Balkhi) is a cherished historical and cultural site located in the city of Balkh, near Mazar-e-Sharif in northern Afghanistan. It is dedicated to Rabia Balkhi, one of the earliest and most celebrated female poets of the Persian language and a powerful symbol of love, courage, and artistic expression.</p>
+  </div>
+  <img src="images/raba.jpg">
+</section>
 
-        <div class="card">
-            <img src="images/khwaja sikandar.jpg">
-            <h3>Khwaja Sikandar – Sholgara</h3>
-            <p>Khwaja Sikandar is a calm and beautiful place located in Sholgara near Mazar-e-Sharif. It is known for its natural scenery and peaceful atmosphere, making it a pleasant destination for visitors who enjoy nature and quiet places.</p>
-        </div>
+<!-- CLIMBER -->
+<section class="climber">
+  <div class="climber-text">
+    <h2>Mazar-e-Sharif</h2>
+    <p>Mazar-e-Sharif, the capital of Balkh Province, is one of Afghanistan’s most significant and beautiful cities. Known for its deep historical roots, rich cultural heritage, and spiritual importance, Mazar-e-Sharif has long been a center of civilization, learning, and trade in Central Asia. The most iconic landmark of Mazar-e-Sharif is the Shrine of Hazrat Ali, commonly known as the Blue Mosque.</p>
+  </div>
+</section>
 
-        <div class="card">
-            <img src="images/5.jpg">
-            <h3>Hairatan Plain</h3>
-            <p>Hairatan Plain is a peaceful and open area near Mazar-e-Sharif. It offers beautiful natural views, fresh air, and a calm environment, making it a nice place for visitors.</p>
-        </div>
-    </section>
+<!-- STORIES -->
+<section class="stories" id="gallery">
+  <h2>Places to Visit</h2>
 
-        <footer class="footer">
-            <p>Designed by: Adela Abbasi</p>
-        </footer>
+  <div class="grid">
+    <div class="card" style="background-image:url('images/khwaja\ sikandar.jpg')">
+      <span>Khwaja Sikandar </span>
+    </div>
+    <div class="card" style="background-image:url('images/deer.jpg')">
+      <span>Mazar Zoo</span>
+    </div>
+    <div class="card" style="background-image:url('images/5.jpg')">
+      <span>Hairatan Plain</span>
+    </div>
+    <div class="card" style="background-image:url('images/Dehdadi\ Garden.jpg')">
+      <span>Dehdadi Garden</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Designed by: Adela Abbasi
+</footer>
 
 </body>
 </html>
