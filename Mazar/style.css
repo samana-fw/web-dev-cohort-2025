@@ -1,24 +1,23 @@
-/* RESET */
-* {
+#attractions *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
+#attractions {
   font-family: 'Montserrat', sans-serif;
   background: #f2f2f2;
   color: #333;
   line-height: 1.6;
 }
 
-a {
+#attractions a {
   text-decoration: none;
   color: inherit;
 }
 
 /* NAVBAR */
-header {
+#attractions header {
   position: fixed;
   top: 0;
   left: 0;
@@ -28,7 +27,7 @@ header {
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-.nav {
+#attractions .nav {
   max-width: 1200px;
   margin: auto;
   padding: 18px 30px;
@@ -37,21 +36,21 @@ header {
   align-items: center;
 }
 
-.logo {
+#attractions .logo {
   font-weight: 700;
   letter-spacing: 2px;
 }
 
-.menu {
+#attractions .menu {
   display: flex;
   gap: 35px;
 }
 
-.menu a {
+#attractions .menu a {
   position: relative;
 }
 
-.menu a::after {
+#attractions .menu a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -62,12 +61,12 @@ header {
   transition: 0.3s;
 }
 
-.menu a:hover::after {
+#attractions .menu a:hover::after {
   width: 100%;
 }
 
 /* HERO */
-.hero {
+#attractions .hero {
   height: 100vh;
   background: url("images/rawza.jpg") center / cover no-repeat;
   display: flex;
@@ -75,7 +74,7 @@ header {
   padding-top: 80px;
 }
 
-.hero-content {
+#attractions .hero-content {
   max-width: 600px;
   margin-left: 8%;
   background: rgba(255,255,255,0.75);
@@ -83,13 +82,13 @@ header {
   animation: fadeUp 1.2s ease forwards;
 }
 
-.hero h1 {
+#attractions .hero h1 {
   font-size: 42px;
   margin-bottom: 20px;
 }
 
 /* BUTTON */
-.btn {
+#attractions .btn {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 28px;
@@ -99,43 +98,43 @@ header {
   transition: 0.3s;
 }
 
-.btn:hover {
+#attractions .btn:hover {
   background: #0b1f3b;
   transform: translateY(-2px);
 }
 
 /* SECTIONS */
-section {
+#attractions section {
   padding: 120px 8%;
   background: #fff;
   animation: fadeIn 1s ease both;
 }
 
 /* PLANNING */
-.planning {
+#attractions .planning {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
 
-.planning img {
+#attractions .planning img {
   width: 80%;
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
   border-radius: 20px;
 }
 
 /* CLIMBER */
-.climber {
+#attractions .climber {
   background: url("images/Hamgardi_14415hu96F0_LE_upscale_prime.jpg") center / cover no-repeat;
   color: white;
   display: flex;
   grid-template-columns: 1fr 1fr;
   align-items: start;
-  height: 650px;
+  height: 550px;
 }
 
-.climber-text {
+#attractions .climber-text {
   padding: 80px;
   font-size: larger;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
@@ -143,18 +142,18 @@ section {
 }
 
 /* STORIES */
-.stories h2 {
+#attractions .stories h2 {
   text-align: center;
 }
 
-.grid {
+#attractions .grid {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
 }
 
-.card {
+#attractions .card {
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -164,12 +163,12 @@ section {
   border-radius: 30px;
 }
 
-.card:hover {
+#attractions .card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 25px 45px rgba(0,0,0,0.25);
 }
 
-.card span {
+#attractions .card span {
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -179,10 +178,10 @@ section {
 }
 
 /* FOOTER */
-footer {
+#attractions footer {
   text-align: center;
   padding: 40px;
-  color: #aaa;
+  color: #000000;
 }
 
 /* ANIMATIONS */
@@ -206,42 +205,42 @@ footer {
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .planning,
-  .climber {
+  #attractions .planning,
+  #attractions .climber {
     grid-template-columns: 1fr;
   }
 
-  .grid {
+  #attractions .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
-  header {
+  #attractions header {
     position: static;
   }
 
-  .nav {
+  #attractions .nav {
     flex-direction: column;
     gap: 15px;
   }
 
-  .hero {
+  #attractions .hero {
     height: auto;
     padding: 120px 0 60px;
   }
 
-  .hero-content {
+  #attractions .hero-content {
     margin: 0 20px;
     padding: 30px;
   }
 
-  .hero h1 {
+  #attractions .hero h1 {
     font-size: 30px;
   }
 
-  .grid {
+  #attractions .grid {
     grid-template-columns: 1fr;
   }
 }
