@@ -1,172 +1,139 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Segoe UI",sans-serif;
 }
 
-body {
-    background: #f4f7f8;
-    color: #222;
+body{
+background:#f4f7f8;
+color:#222;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 8%;
-    background: #2FA36B;
-    color: white;
+.navbar-latifa{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:#2FA36B;
+color:white;
 }
 
-.navbar nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
+.navbar-latifa nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
+.logo-latifa{
+font-size:22px;
+font-weight:bold;
 }
 
-.hero {
-    height: 80vh;
-    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url("images/budda.jpg") center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
+.hero-latifa{
+height:80vh;
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("images/budda.jpg") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
 }
 
-.hero h1 {
-    font-size: 52px;
+.hero-latifa h1{font-size:52px;}
+.hero-latifa p{font-size:20px;margin:15px 0;}
+
+.hero-latifa button{
+padding:12px 28px;
+border:none;
+background:#6FD1C7;
+color:white;
+border-radius:6px;
 }
 
-.hero p {
-    font-size: 20px;
-    margin: 15px 0;
+.highlights-latifa{
+padding:60px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
-.hero button {
-    padding: 12px 28px;
-    border: none;
-    background: #6FD1C7;
-    color: white;
-    font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
+.card-latifa{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+text-align:center;
 }
 
-.highlights {
-    padding: 60px 8%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+.card-latifa img{
+width:100%;
+height:200px;
+object-fit:cover;
 }
 
-.card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    text-align: center;
+.card-latifa button{
+margin-bottom:20px;
+padding:8px 20px;
+background:#2FA36B;
+color:white;
+border:none;
+border-radius:5px;
 }
 
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.about-latifa{
+padding:60px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:center;
 }
 
-.card h3 {
-    margin: 15px 0 5px;
+.about-image-latifa img{
+width:100%;
+border-radius:10px;
 }
 
-.card p {
-    padding: 0 15px 15px;
+.news-latifa{padding:60px 8%;}
+
+.news-grid-latifa{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
-.card button {
-    margin-bottom: 20px;
-    padding: 8px 20px;
-    border: none;
-    background: #2FA36B;
-    color: white;
-    border-radius: 5px;
+.news-card-latifa{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
-.about {
-    padding: 60px 8%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: center;
+.news-card-latifa img{
+width:100%;
+height:180px;
+object-fit:cover;
 }
 
-.about img {
-    width: 100%;
-    border-radius: 10px;
+.news-card-latifa button{
+margin:15px;
+padding:8px 18px;
+background:#6FD1C7;
+border:none;
+color:white;
+border-radius:5px;
 }
 
-.news {
-    padding: 60px 8%;
+.footer-latifa{
+background:#6B7280;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
 }
 
-.news h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-
-.news-card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.news-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.news-card h4 {
-    padding: 10px 15px;
-}
-
-.news-card p {
-    padding: 0 15px 15px;
-}
-
-.news-card button {
-    margin: 0 15px 15px;
-    padding: 8px 18px;
-    border: none;
-    background: #6FD1C7;
-    color: white;
-    border-radius: 5px;
-}
-
-footer {
-    background: #6B7280;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-@media (max-width: 800px) {
-    .about {
-        grid-template-columns: 1fr;
-    }
+@media(max-width:800px){
+.about-latifa{grid-template-columns:1fr;}
 }
