@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Attractions</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
 :root {
   --deep-navy: #0B1F3B;
@@ -31,7 +31,110 @@ body {
   color: var(--slate-gray);
 }
 
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Logo image */
+.logo img {
+  width: 100px;
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+  padding-left: 10px;
+}
+
+/* Hover effect */
+.logo:hover {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.28);
+}
+/* ===== Search Box ===== */
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Input */
+.search-box input {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.25);
+  color: #fff;
+  width: 180px;
+}
+
+/* Placeholder */
+.search-box input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+/* Button */
+.search-btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  background: var(--sunset-coral);
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.search-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .search-box input {
+    width: 140px;
+  }
+}
+
+
 /* ================= HERO ================= */
+  
+
 .hero {
   height: 95vh;
   background:
@@ -44,16 +147,55 @@ body {
   display: flex;
   align-items: center;
   padding-left: 10%;
+  animation: heroSlider 50s infinite;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+@keyframes heroSlider{
+  0% {
+    background-image: url("images/bg1.jpg");
+  }
+  10% {
+    background-image: url("images/bg2.jpg");
+  }
+  20% {
+    background-image: url("images/bg3.jpg");
+  }
+  30% {
+    background-image: url("images/bg4.jpg");
+  }
+  40% {
+    background-image: url("images/bg5.jpg");
+  }
+  50%{
+    background-image: url("images/bg6.jpg");
+  }
+  60%{
+    background-image: url("images/kabul-view-1000x600.jpg");
+  }
+  70%{
+    background-image: url("images/modern-kabul-city.jpg");
+  }
+  80%{
+    background-image: url("images/istockphoto-1386846681-612x612.jpg");
+  }
+  90%{
+    background-image: url("images/kabul-city-afghanistan_906060-474.avif");
+  }
+  100%{
+    background-image: url("images/skærmbillede-2023-12-17-kl.-14.41.00.png");
+  }
 }
 
 .hero-box {
   max-width: 650px;
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
+  /* background: rgba(255,255,255,0.08); */
+  /* backdrop-filter: blur(10px); */
   padding: 50px 55px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   color: white;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  /* box-shadow: 0 20px 50px rgba(0,0,0,0.3); */
 }
 
 .hero-tag {
@@ -137,7 +279,7 @@ body {
 }
 
 .place-card img {
-  width: 45%;
+  width: 40%;
   border-radius: 18px;
   object-fit: cover;
 }
@@ -173,19 +315,52 @@ body {
   background: var(--palm-green);
 }
 
-/* ================= FOOTER ================= */
-footer {
-  background: var(--deep-navy);
-  color: white;
+.footer {
+  background-color: #1a1a1a; 
+  color: #fff; 
   text-align: center;
-  padding: 22px;
+  padding: 30px 20px;
 }
+
+.footer-content p {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; 
+}
+
+.social-link {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-link:hover {
+  color:  var(--sunset-coral); 
+  transform: scale(1.2); 
+}
+
+
+@media (max-width: 600px) {
+  .footer-content p {
+    font-size: 14px;
+  }
+  .social-link {
+    font-size: 18px;
+  }
+}
+
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
   .hero {
     padding: 0 7%;
     justify-content: center;
+     
   }
 
   .hero-box {
@@ -213,7 +388,24 @@ footer {
     </style>
 </head>
 <body>
-    
+    <!-- ================= NAV BAR ================= --> 
+
+    <nav class="navbar">
+  <div class="nav-container">
+
+    <!-- Logo as Menu Button -->
+    <div class="logo menu-btn">
+           <img src="images/1000133516.png" alt="">
+    </div>
+
+    <!-- Search Box -->
+    <div class="search-box">
+      <input type="text" placeholder="Search places...">
+      <button class="search-btn">Search</button>
+    </div>
+
+  </div>
+</nav>
 
 <!-- ================= HERO SECTION ================= -->
 <header class="hero">
@@ -238,7 +430,7 @@ footer {
   </div>
 </header>
 
-<section id="attractions" class="attractions">
+<section id="attractions" class="attractions-section">
   <h2>Famous Places in Kabul</h2>
 
   <!-- 1. Kabul Museum -->
@@ -246,7 +438,10 @@ footer {
     <img src="images/national-museum.webp" alt="Kabul Museum">
     <div class="place-info">
       <h3>Kabul Museum</h3>
-      <p>The Kabul Museum preserves thousands of artifacts representing ancient civilizations, including Kushan, Greco-Bactrian, and Islamic periods.</p>
+      
+      <p>The Kabul Museum preserves thousands of artifacts representing ancient civilizations, including Kushan, Greco-Bactrian, and Islamic periods.
+         The Kabul Museum, established in 1919, is Afghanistan’s premier museum of history and culture. It contains thousands of artifacts ranging from ancient coins, manuscripts, and pottery to exquisite jewelry and sculptures from the Greco-Bactrian, Kushan, and Islamic periods. Despite being damaged during conflicts, many pieces have been restored. Visitors can explore extensive galleries highlighting Afghanistan’s diverse civilizations, artistic achievements, and cultural heritage. The museum also hosts temporary exhibitions, educational programs, and cultural events that provide insight into Afghanistan’s rich history and traditions, making it a must-visit for scholars and tourists alike.
+      </p>
       <p>It plays a vital role in protecting heritage and educating students and researchers about Afghanistan’s history.</p>
       <a href="museum.html" class="details-btn">Read More</a>
     </div>
@@ -257,7 +452,9 @@ footer {
     <img src="images/DARUL AMAN.jpg" alt="Darul Aman Palace">
     <div class="place-info">
       <h3>Darul Aman Palace</h3>
-      <p>Darul Aman Palace was built in early 20th century as part of modernization. European and Afghan architectural elements are combined.</p>
+      <p>Darul Aman Palace was built in early 20th century as part of modernization. European and Afghan architectural elements are combined.
+          Darulaman Palace, built in the 1920s by King Amanullah Khan, is an iconic symbol of Afghanistan’s early modernization. Designed with European-inspired architecture fused with Afghan motifs, the palace features grand halls, majestic domes, and spacious courtyards. Once intended as the royal residence and administrative center, it reflects the ambitions of modernization during King Amanullah’s reign. The surrounding gardens and terraces are serene and offer photography opportunities. Despite damage during decades of conflict, ongoing restoration has preserved its elegance, making it a must-see landmark for visitors seeking both history and architectural beauty in Kabul.
+      </p>
       <p>It stands as a national symbol representing political and cultural transformation.</p>
       <a href="darulaman.html" class="details-btn">Read More</a>
     </div>
@@ -268,7 +465,9 @@ footer {
     <img src="images/very-good-place-for-the.jpg" alt="Qargha Lake">
     <div class="place-info">
       <h3>Qargha Lake</h3>
-      <p>A popular recreational destination with natural scenery and fresh air, ideal for families and relaxation.</p>
+      <p>A popular recreational destination with natural scenery and fresh air, ideal for families and relaxation.
+        Qargha Lake, located just outside Kabul, is a beautiful recreational area popular with locals and tourists. The lake is surrounded by lush gardens, walking paths, and picnic spots. Visitors can enjoy boating, fishing, or simply relaxing by the calm waters while taking in the picturesque surroundings. Nearby cafes serve traditional Afghan food, creating a perfect family outing environment. Its accessibility from the city, scenic views of the surrounding hills, and peaceful ambiance make Qargha Lake a favorite weekend destination for both locals and travelers. It is also a popular spot for photography and leisure activities.
+      </p>
       <p>The lake attracts visitors seeking outdoor activities away from city life.</p>
       <a href="qargha.html" class="details-btn">Read More</a>
     </div>
@@ -279,7 +478,9 @@ footer {
     <img src="images/Places-to-visit-in-Kabul-Pul-e-Khishti-Mosque-1024x683.jpg" alt="Shah Do Shamshira Mosque">
     <div class="place-info">
       <h3>Shah Do Shamshira Mosque</h3>
-      <p>An iconic mosque in Kabul, distinguished by unique architecture and central location.</p>
+      <p>An iconic mosque in Kabul, distinguished by unique architecture and central location.
+         Shah Do Shamshera is an ancient mosque renowned for its architectural elegance and intricate tile work. The mosque is a hub for religious gatherings and cultural events, reflecting the spiritual life of Kabul. Visitors are attracted to its grand arches, domes, and historical inscriptions that display the city’s rich Islamic heritage. The surrounding courtyard and gardens provide a tranquil setting for reflection and photography. Shah Do Shamshera remains a central point of community life while showcasing centuries-old craftsmanship. Its historical and cultural significance makes it an essential visit for tourists and researchers interested in Afghan architecture and history.
+      </p>
       <p>It holds religious and historical significance and is an important spiritual center.</p>
       <a href="shahdoshamshira.html" class="details-btn">Read More</a>
     </div>
@@ -290,7 +491,9 @@ footer {
     <img src="images/FP5valWXsAs7I5q.jpg" alt="Karte Sakhi Shrine">
     <div class="place-info">
       <h3>Karte Sakhi Shrine</h3>
-      <p>One of Kabul’s sacred religious sites, famous for cultural and religious gatherings.</p>
+      <p>One of Kabul’s sacred religious sites, famous for cultural and religious gatherings.
+          Ziarat-e-Sakhi is one of Kabul’s most important shrines, attracting pilgrims from across Afghanistan. The site is famed for its vibrant architecture, peaceful courtyards, and annual religious celebrations. Visitors can witness rituals, experience local traditions, and learn about the shrine’s historical and spiritual importance. It serves as a center for community gatherings and is deeply woven into Kabul’s religious and cultural identity. The serene surroundings, decorative domes, and spiritual atmosphere make Ziarat-e-Sakhi a must-visit landmark for those interested in Afghan heritage, religious history, and cultural practices.
+      </p>
       <p>It represents spiritual devotion and plays a key role in community life.</p>
       <a href="sakhi.html" class="details-btn">Read More</a>
     </div>
@@ -298,10 +501,12 @@ footer {
 
   <!-- 6. Bibi Mahro Hill -->
   <div class="place-card reverse">
-    <img src="images/7949333336_3497193847_b.jpg" alt="Bibi Mahro Hill">
+    <img src="images/bg8.jpg" alt="Bibi Mahro Hill">
     <div class="place-info">
       <h3>Bibi Mahro Hill</h3>
-      <p>Scenic viewpoint offering panoramic views of Kabul city, popular for photography and nature walks.</p>
+      <p>Scenic viewpoint offering panoramic views of Kabul city, popular for photography and nature walks.
+        Tapa-e-Bibi Mahro is a historic hill offering panoramic views over Kabul city. Known for its scenic vantage points, the hill is surrounded by walking paths and small cafes where visitors can relax and enjoy local snacks. It holds cultural and historical significance, as local stories and legends are linked to the site. Photographers and tourists often come here to capture Kabul’s skyline. The hill is also popular for educational visits, as guides explain its historical relevance and significance in Kabul’s urban development. The serene environment makes it ideal for leisure and cultural exploration.
+      </p>
       <p>The hill highlights the natural beauty surrounding the capital.</p>
       <a href="bibimahro.html" class="details-btn">Read More</a>
     </div>
@@ -312,7 +517,9 @@ footer {
     <img src="images/EWwOWq0WsAAjX1s.jpg" alt="Pul-e-Khishti Mosque">
     <div class="place-info">
       <h3>Pul-e-Khishti Mosque</h3>
-      <p>One of the largest mosques in Kabul, central for worship and religious education.</p>
+      <p>One of the largest mosques in Kabul, central for worship and religious education.
+          Pul-e-Kheshti Mosque is one of Kabul’s oldest mosques and a cornerstone of the city’s Islamic architecture. It features large domes, minarets, and traditional geometric decorations. The mosque is still active for daily prayers and community gatherings. Visitors can admire the architectural details, explore the serene courtyard, and learn about local religious practices. Its long-standing presence in Kabul reflects the city’s spiritual life and cultural traditions. Pul-e-Kheshti Mosque also hosts lectures, religious classes, and events that maintain community engagement and preserve Afghanistan’s heritage.
+      </p>
       <p>Known for its historical significance and architectural presence.</p>
       <a href="pulkhishti.html" class="details-btn">Read More</a>
     </div>
@@ -323,7 +530,9 @@ footer {
     <img src="images/abdul rahman mosque.jpg" alt="Abdul Rahman Khan Mosque">
     <div class="place-info">
       <h3>Abdul Rahman Khan Mosque</h3>
-      <p>A modern mosque reflecting contemporary Islamic architecture in Kabul.</p>
+      <p>A modern mosque reflecting contemporary Islamic architecture in Kabul.
+        Named after King Abdul Rahman Khan, this mosque is a major religious site in Kabul. It features striking domes, intricate interiors, and traditional Islamic art. Serving both locals and visitors, the mosque is an active center for prayers, festivals, and community gatherings. Its historical relevance and architectural beauty attract students of history, art, and religion. The surrounding courtyards provide space for reflection and leisure. Abdul Rahman Khan Mosque remains a symbol of Afghan religious heritage, blending spirituality with cultural pride, and is considered one of the most impressive mosques in the city.
+      </p>
       <p>It functions as a place of worship and a cultural symbol in the city.</p>
       <a href="abdulrahman.html" class="details-btn">Read More</a>
     </div>
@@ -334,7 +543,9 @@ footer {
     <img src="images/e4de30948fd44789cb1a1297e551a809.jpg" alt="Babur Garden">
     <div class="place-info">
       <h3>Babur Garden</h3>
-      <p>Historic park and burial place of Emperor Babur, combining history with natural beauty.</p>
+      <p>Historic park and burial place of Emperor Babur, combining history with natural beauty.
+         Babur Gardens, built by Emperor Babur, is a historic Mughal-style garden in Kabul. The terraced layout, water fountains, flower beds, and pathways reflect Mughal landscaping principles. The gardens are a peaceful retreat for visitors, offering opportunities for photography, walks, and cultural exploration. Historical monuments and inscriptions within the gardens provide insight into the Mughal influence in Afghanistan. Babur Gardens is ideal for family outings, leisure, and learning about Afghan history and heritage, making it one of Kabul’s most celebrated public spaces.
+      </p>
       <p>One of Kabul’s most visited tourist attractions.</p>
       <a href="babur.html" class="details-btn">Read More</a>
     </div>
@@ -342,10 +553,12 @@ footer {
 
   <!-- 10. TV Hill (Koh-e-Asmai) -->
   <div class="place-card reverse">
-    <img src="images/afternoon-view-across-downtown-kabul-600nw-2508085663.webp" alt="TV Hill Kabul">
+    <img src="images/bg9.webp" alt="TV Hill Kabul">
     <div class="place-info">
       <h3>TV Hill (Koh-e-Asmai)</h3>
-      <p>One of the highest points in Kabul, offering spectacular city views.</p>
+      <p>One of the highest points in Kabul, offering spectacular city views.
+         Bala Hissar is the historic fortress of Kabul, perched on a hilltop overlooking the city. Its walls, gates, and ancient structures reveal Afghanistan’s military and royal history. The fortress offers panoramic views, historical insights, and architectural exploration opportunities. Visitors can learn about past battles, royal events, and strategic importance of the site. Its museum sections display artifacts and provide educational value. Bala Hissar remains a prominent symbol of Kabul’s resilience, culture, and heritage, making it an essential destination for tourists, students, and history enthusiasts.
+      </p>
       <p>Important landmark for visitors interested in geography and urban landscapes.</p>
       <a href="tvhill.html" class="details-btn">Read More</a>
     </div>
@@ -353,9 +566,19 @@ footer {
 
 </section>
 
+
 <!-- ================= FOOTER ================= -->
-<footer>
-  <p>© 2026 Kabul Attractions – Academic Project</p>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2026 Homira Azimi. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="facebook" class="social-link"><i class="fab fa-facebook-f"></i></a>
+      <a href="twitter" class="social-link"><i class="fab fa-twitter"></i></a>
+      <a href="instagram" class="social-link"><i class="fab fa-instagram"></i></a>
+      <a href="linkedin" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
 </footer>
 
 
