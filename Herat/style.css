@@ -1,10 +1,10 @@
-*{
+.herat-index {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+body.herat-index {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f4f6f8;
@@ -330,7 +330,7 @@ body {
     text-align: center;
   }
 }
-:root {
+.herat-attractions {
     --ocean-blue: #1F6AE1;
     --deep-navy: #0B1F3B;
     --sand-beige: #F3ECDC;
@@ -340,14 +340,14 @@ body {
     --cloud-white: #FFFFFF;
     --slate-gray: #6B7280;
 }
-
-* {
+/* ---------------------------------------------------------------------*/
+.herat-attractions {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body.herat-attractions{
     font-family: "Segoe UI", Tahoma, sans-serif;
     background-color: var(--sand-beige);
     color: var(--slate-gray);
@@ -355,7 +355,7 @@ body {
 }
 
 
-img {
+img.herat-attractions {
     max-width: 100%;
     display: block;
 }
@@ -414,7 +414,7 @@ img {
     margin-bottom: 18px;
 }
 
-.btn {
+.btn.herat-attractions {
     display: inline-block;
     padding: 10px 22px;
     background-color: var(--ocean-blue);
@@ -425,7 +425,7 @@ img {
     transition: all 0.3s ease;
 }
 
-.btn:hover {
+.btn.herat-attractions:hover {
     background-color: var(--deep-navy);
     transform: translateY(-2px);
 }
@@ -455,7 +455,7 @@ img {
         height: 220px;
     }
 
-    .btn {
+    .btn.herat-attractions {
         width: 100%;
         text-align: center;
     }
