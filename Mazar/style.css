@@ -1,8 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 #food-page *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: "Poppins", sans-serif;
+ font-family: "Poppins", sans-serif;
 }
 
 #food-page{
@@ -174,6 +178,8 @@
 
   #food-page .cards{
     grid-template-columns:repeat(3,1fr);
+  }
+}
 /* --- 1. GLOBAL VARIABLES --- */
 :root {
     --blue: #1F6AE1;
@@ -189,12 +195,6 @@
 }
 
 /* --- 2. RESET & BASE STYLES --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
 
 body {
     font-family: var(--font-body);
@@ -706,7 +706,8 @@ h1, h2, h3, h4 {
         border-radius: 50px;
     }
     .page-index .vibe-card:hover { flex: 1; }
-#attractions *{
+}
+#attractions {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
