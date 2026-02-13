@@ -1,4 +1,4 @@
-* {
+.page-index {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -181,7 +181,7 @@
   }
 }
 /* --- 1. GLOBAL VARIABLES --- */
-:root {
+.page-index {
     --blue: #1F6AE1;
     --dark: #0B1F3B;
     --aqua: #6FD1C7;
@@ -196,14 +196,17 @@
 
 /* --- 2. RESET & BASE STYLES --- */
 
-body {
+body.page-index {
     font-family: var(--font-body);
     background: var(--white);
     color: var(--dark);
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
+.page-index h1,
+.page-index h2,
+.page-index h3,
+.page-index h4 {
     font-family: var(--font-heading);
 }
 
