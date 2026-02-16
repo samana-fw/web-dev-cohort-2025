@@ -1,18 +1,18 @@
-
-* {
+/* GALLERY PAGE */
+body.gallery-page * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+body.gallery-page {
   font-family: Arial, sans-serif;
   background: #F3ECDC; 
   color: #0B1F3B;
 }
 
 /* navbar */
-.gallery-navbar {
+body.gallery-page .gallery-navbar  {
   background: #0B1F3B;
   padding: 20px;
   display: flex;
@@ -20,63 +20,63 @@ body {
   align-items: center;
 }
 
-.gallery-logo {
+body.gallery-page .gallery-logo{
   color: white;
 }
 
-.gallery-navbar a {
+body.gallery-page .gallery-navbar a {
   color: white;
   margin-left: 15px;
   text-decoration: none;
 }
 
-.gallery-navbar a.active {
+body.gallery-page .gallery-navbar a.active {
   border-bottom: 2px solid #FF6B5A; /* Coral */
 }
 
 /* gallery section */
-.gallery-section {
+body.gallery-page .gallery-section {
   padding: 50px 30px;
   text-align: center;
 }
 
-.gallery-section h2 {
+body.gallery-page .gallery-section h2 {
   font-size: 32px;
   margin-bottom: 10px;
 }
 
-.gallery-section p {
+body.gallery-page .gallery-section p{
   margin-bottom: 40px;
   color: #555;
 }
 
 /* grid */
-.gallery-grid {
+body.gallery-page .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 
 /* items */
-.gallery-item {
+body.gallery-page .gallery-item {
   position: relative;
 
   overflow: hidden;
   border-radius: 10px;
 }
 
-.gallery-item img {
+body.gallery-page .gallery-item img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.gallery-item:hover img {
+body.gallery-page .gallery-item:hover img {
   transform: scale(1.08);
 }
 
-.gallery-item span {
+body.gallery-page .gallery-item span  {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -88,13 +88,15 @@ body {
 }
 
 /* footer */
-.gallery-footer {
+body.gallery-page .gallery-footer{
   background: #0B1F3B;
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 50px;
 }
+
+/* INDEX FILE - HOMEPAGE */
 /* Wrapper to prevent global conflicts */
 .index-wrapper * {
   margin:0;
