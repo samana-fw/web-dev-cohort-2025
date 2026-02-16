@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attractions</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* ---------- NAVBAR ---------- */
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #6FD1C7;
+        }
+
+        /* ---------- HERO ---------- */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(
+                rgba(11, 31, 59, 0.55),
+                rgba(11, 31, 59, 0.55)
+            ),
+            url("images/faryab_landscape_hero_background.jpg") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .hero h1 {
+             font-size: 4rem;
+             font-weight: 700;
+             color: white;
+             margin-bottom: 20px;
+             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero p {
+             font-size: 1.5rem;
+             color: rgba(255, 255, 255, 0.95);
+             margin-bottom: 40px;
+             font-style: italic;
+
+        }
+
+        .hero a {
+            background-color: #1F6AE1;
+            color: #FFFFFF;
+            padding: 12px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .hero a:hover {
+            background-color: #0B1F3B;
+        }
+
+        /* ---------- SECTION ---------- */
+        section {
+            padding: 70px 40px;
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #1F6AE1;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 14px;
+            color: #6B7280;
+            margin-bottom: 40px;
+        }
+        .divider {
+          width: 80px;
+          height: 4px;
+          background: linear-gradient(to right, #3b82f6, #60a5fa);
+          margin: 0 auto;
+          border-radius: 2px;
+        }
+
+        /* ---------- Attractions Card---------- */
+
+        .card {
+            background-color: #FFFFFF;
+            gap: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid #f3f4f6;
+        }
+
+
+
+        .card img {
+            width: 300px;
+            object-fit: cover;
+  
+        }
+
+        .card-content {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .card-text h3 {
+            font-size: 2rem;
+            color: #1e40af;
+            margin-bottom: 20px;
+        }
+
+        .card-text p {
+            font-size: 1.125rem;
+            color: #6b7280;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+
+        .card-text a:hover {
+            background-color: #FF6B5A;
+        }
+
+
+          
+        .btn-read-more {
+             display: inline-block;
+             padding: 16px 40px;
+             background-color: white;
+             color: #1e40af;
+             font-weight: 600;
+             font-size: 1.1rem;
+             text-decoration: none;
+             border-radius: 50px;
+             transition: all 0.3s ease;
+             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+          
+        .btn-read-more:hover {
+             transform: translateY(-3px);
+             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+             background-color: #f0f9ff;
+
+        }
+          
+        .arrow-icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* ---------- CTA ---------- */
+        .cta {
+            background:
+            url("images/faryab_sunset_landscape.jpg") center/cover no-repeat;
+            padding: 80px 20px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .cta h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .cta p {
+            font-size: 14px;
+            margin-bottom: 25px;
+            color: #F3ECDC;
+        }
+
+        .cta a {
+            background-color: #FF6B5A;
+            color: #FFFFFF;
+            padding: 12px 34px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .cta a:hover {
+            background-color: #2FA36B;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="food.html">Food</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">Attractions</a>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div>
+            <h1>Explore Faryab top attractions</h1>
+            <p>Embark on an endless journey through the heart of Faryab, where culture and nature intertwine beautifully</p>
+            <a href="#Attractions">Explore More</a>
+        </div>
+    </div>
+
+    <!-- Attractions -->
+    <section id="Attractions">
+        <h2>Discover</h2>
+        <p>Must-Visit Destinations</p>
+
+        <!-- Card 1: Qaisar Valley -->
+        <article class="card">
+          <div class="card-content">
+            <div class="card-image">
+                <img src="images/qaisar_valley_landscape.jpg" alt="qaisar_valley_landscape">
+            </div>
+            <div class="card-text">
+                <h3>Qaisar Valley</h3>
+                <p>Qaisar Valley is renowned for its breathtaking landscapes and fertile agricultural fields. The valley offers visitors a glimpse into traditional Afghan farming life, surrounded by rolling hills and pristine natural beauty that changes magnificently with each season.</p>
+                <div class="card-button"><a href="#" class="btn-read-more"> Read More </a>
+                </div>
+            </div>
+          </div>
+        </article>  
+
+          <!-- Card 2: Andkhoy Historical Sites -->
+         <article class="card">
+          <div class="card-content">
+            <div class="card-image">
+                <img src="images/andkhoy_historical_sites.jpg" alt="andkhoy_historical_sites">
+            </div>
+            <div class="card-text">
+                <h3>Andkhoy Historical sites</h3>
+                <p>Andkhoy stands as a testament to Faryab's rich cultural tapestry and ancient trade history. This historic city was once a crucial stop on the Silk Road, featuring remarkable architecture, traditional bazaars, and archaeological sites that tell stories of centuries past.</p>
+                <div class="card-button"><a href="#" class="btn-read-more"> Read More </a>
+                </div>
+            </div>
+          </div>
+         </article>
+          <!-- Card 3: Maymana Citadel -->
+        <article class="card">
+          <div class="card-content">
+            <div class="card-image">
+                <img src="images/maymana_citadel_fortress.jpg" alt="maymana_citadel_fortress">
+            </div>
+            <div class="card-text">
+                <h3>Maymana Citadel</h3>
+                <p>The historic Maymana Citadel stands as a proud symbol of Faryab's storied past. This ancient fortress, perched strategically on elevated ground, offers panoramic views of the provincial capital and serves as a powerful reminder of the region's strategic importance through the ages.</p>
+                <div class="card-button"><a href="#" class="btn-read-more"> Read More </a>
+                </div>
+            </div>
+          </div>
+        </article>         
+            
+        
+    </section>
+
+    <!-- CTA -->
+    <div class="cta">
+        <h2>Uncover more of Faryab treasures</h2>
+        <p>Explore the rich cultural heritage and natural wonders of Faryab.</p>
+        <a href="#Attractions">Get Started</a>
+    </div>
+
+</body>
+</html>
