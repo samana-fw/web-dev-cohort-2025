@@ -1,139 +1,151 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:"Segoe UI",sans-serif;
+/* Wrapper to prevent global conflicts */
+.index-wrapper * {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI",sans-serif;
 }
 
-body{
-background:#f4f7f8;
-color:#222;
+.index-wrapper {
+  background:#f4f7f8;
+  color:#222;
 }
 
-.navbar-latifa{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 8%;
-background:#2FA36B;
-color:white;
+/* Navbar */
+.navbar-index {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 8%;
+  background:#2FA36B;
+  color:white;
 }
 
-.navbar-latifa nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:500;
+.navbar-index .nav-link-index {
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:500;
 }
 
-.logo-latifa{
-font-size:22px;
-font-weight:bold;
+.logo-index {
+  font-size:22px;
+  font-weight:bold;
 }
 
-.hero-latifa{
-height:80vh;
-background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url("images/budda.jpg") center/cover no-repeat;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
+/* Hero section */
+.hero-index {
+  height:80vh;
+  background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+             url("images/budda.jpg") center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
 }
 
-.hero-latifa h1{font-size:52px;}
-.hero-latifa p{font-size:20px;margin:15px 0;}
+.hero-title-index { font-size:52px; }
+.hero-index p { font-size:20px; margin:15px 0; }
 
-.hero-latifa button{
-padding:12px 28px;
-border:none;
-background:#6FD1C7;
-color:white;
-border-radius:6px;
+.btn-hero-index {
+  padding:12px 28px;
+  border:none;
+  background:#6FD1C7;
+  color:white;
+  border-radius:6px;
 }
 
-.highlights-latifa{
-padding:60px 8%;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+/* Highlights / cards */
+.highlights-index {
+  padding:60px 8%;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
 }
 
-.card-latifa{
-background:white;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-text-align:center;
+.card-index {
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
+  text-align:center;
 }
 
-.card-latifa img{
-width:100%;
-height:200px;
-object-fit:cover;
+.card-img-index {
+  width:100%;
+  height:200px;
+  object-fit:cover;
 }
 
-.card-latifa button{
-margin-bottom:20px;
-padding:8px 20px;
-background:#2FA36B;
-color:white;
-border:none;
-border-radius:5px;
+.btn-card-index {
+  margin-bottom:20px;
+  padding:8px 20px;
+  background:#2FA36B;
+  color:white;
+  border:none;
+  border-radius:5px;
 }
 
-.about-latifa{
-padding:60px 8%;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
-align-items:center;
+/* About section */
+.about-index {
+  padding:60px 8%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  align-items:center;
 }
 
-.about-image-latifa img{
-width:100%;
-border-radius:10px;
+.about-img-index {
+  width:100%;
+  border-radius:10px;
 }
 
-.news-latifa{padding:60px 8%;}
-
-.news-grid-latifa{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+/* News section */
+.news-index {
+  padding:60px 8%;
 }
 
-.news-card-latifa{
-background:white;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+.news-grid-index {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
 }
 
-.news-card-latifa img{
-width:100%;
-height:180px;
-object-fit:cover;
+.news-card-index {
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
-.news-card-latifa button{
-margin:15px;
-padding:8px 18px;
-background:#6FD1C7;
-border:none;
-color:white;
-border-radius:5px;
+.news-img-index {
+  width:100%;
+  height:180px;
+  object-fit:cover;
 }
 
-.footer-latifa{
-background:#6B7280;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
+.btn-news-index {
+  margin:15px;
+  padding:8px 18px;
+  background:#6FD1C7;
+  border:none;
+  color:white;
+  border-radius:5px;
 }
 
+/* Footer */
+.footer-index {
+  background:#6B7280;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+
+/* Responsive */
 @media(max-width:800px){
-.about-latifa{grid-template-columns:1fr;}
+  .about-index {
+    grid-template-columns:1fr;
+  }
 }
