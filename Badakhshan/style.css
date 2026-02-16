@@ -1,6 +1,6 @@
 
  /* HERO */
-.hero-gallery {
+.gallery-hero {
   position: relative;
   height: 300px;
   background-image: url("images/badakhshan-mountain.jpg");
@@ -13,14 +13,14 @@
   justify-content: center;
 }
 
-.hero-gallery::before {
+.gallery-hero::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
 }
 
-.hero-gallery h1 {
+.gallery-hero h1 {
   position: relative;
   z-index: 1;
   font-size: 58px;
@@ -34,7 +34,7 @@
 }
 
 /* NAVBAR */
-.navbar-gallery {
+.gallery-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,18 +42,18 @@
   background: #0b1f3b;
 }
 
-.logo {
+.gallery-logo {
   display: flex;
   align-items: center;
   gap: 8px; 
 }
 
-.logo img {
+.gallery-logo img {
   height: 20px; /* small flag */
   width: auto;
 }
 
-.logo-text {
+.gallery-logo-text {
   color: white;
   font-size: 14px;
   font-weight: 600;
@@ -63,23 +63,23 @@
 
 
 
-.nav-links {
+.gallery-nav-links {
   list-style: none;
   display: flex;
   gap: 25px;
 }
 
-.nav-links a {
+.gallery-nav-links a {
   color: white;
   text-decoration: none;
 }
 
-.nav-links a:hover {
+.gallery-nav-links a:hover {
   text-decoration: underline;
 }
 
 /* 3D TITLE TEXT */
-.hero h1 {
+.gallery-hero h1 {
   font-size: 58px;
   color: #6fd1c7;
   letter-spacing: 4px;
@@ -90,21 +90,21 @@
     0 3px 6px rgb(243, 239, 239),
     0 8px 18px rgb(241, 236, 236);
 }
- *{
+.gallery-page-wrapper *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', Arial;
 }
 
-.destinations {
+.gallery-destinations {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   padding: 40px;
 }
 
-.card {
+.gallery-card {
   text-decoration: underline;
   color: #0b1f3b;
   background: #ffff;
@@ -113,28 +113,28 @@
   box-shadow: 0 10px 20px #6fd1c7;
 }
 
-.card img {
+.gallery-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.card h3 {
+.gallery-card h3 {
   padding: 15px;
   text-align: center;
 }
 
 
-.gallery-page {
+.gallery-section {
   display: none;
   padding: 40px;
 }
 
-.gallery-page:target {
+.gallery-section:target {
   display: block;
 }
 
-.gallery-page:target ~ #home {
+.gallery-section:target ~ #gallery-home {
   display: none;
 }
 
@@ -158,14 +158,14 @@
 }
 
 /* BACK BUTTON */
-.back {
+.gallery-back {
   display: inline-block;
   margin-bottom: 20px;
   text-decoration: none;
   font-size: 18px;
 }
 /* FOOTER */
-.footer {
+.gallery-footer {
   background: #0b1f3b;
   color: white;
   text-align: center;
@@ -173,13 +173,13 @@
   margin-top: 40px;
 }
 
-.footer .love {
+.gallery-love {
   font-size: 20px;
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
 
-.socials {
+.gallery-socials {
   display: flex;
   justify-content: center;
   gap: 20px;
