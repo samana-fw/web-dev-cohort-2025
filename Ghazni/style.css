@@ -3,7 +3,7 @@
 body.index-page {
   font-family: Arial, sans-serif;
   width: 90vw;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -80,7 +80,7 @@ body.index-page {
 /* hero section start */
 .index-page #index-hero {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,7 +132,7 @@ body.index-page {
 /* about section start */
 .index-page .index-about {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -178,7 +178,7 @@ body.index-page {
 .index-page .index-pages {
   background-color: var(--third-color);
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -241,7 +241,7 @@ body.index-page {
 /* update section start */
 .index-page .index-update {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../Ghazni/images/غزنی/cave-town-zelve-valley-cappadocia-turkey.jpg);
