@@ -68,7 +68,9 @@ body.index-page {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
   text-decoration: none;
   font-family: cursive;
   font-size: 1.2rem;
@@ -85,6 +87,7 @@ body.index-page {
   background-image:
     linear-gradient(rgba(58, 52, 52, 0.2), rgba(56, 50, 50, 0.2)),
     url("../Ghazni/images/غزنی/majestic-mosque-islamic-new-year-celebration-with-fantasy-architecture\ \(1\).jpg");
+  background-position: center;
 }
 
 .index-page .index-hero-para {
