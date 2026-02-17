@@ -1,3 +1,191 @@
+
+ /* HERO */
+.gallery-hero {
+  position: relative;
+  height: 300px;
+  background-image: url("images/badakhshan-mountain.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.gallery-hero h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 58px;
+  color: white;
+  letter-spacing: 4px;
+  font-weight: 800;
+  -webkit-text-stroke: 1.5px rgba(245, 237, 237, 0.836);
+  text-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.35),
+    0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* NAVBAR */
+.gallery-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #0b1f3b;
+}
+
+.gallery-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.gallery-logo img {
+  height: 20px; /* small flag */
+  width: auto;
+}
+
+.gallery-logo-text {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+
+
+.gallery-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.gallery-nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.gallery-nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* 3D TITLE TEXT */
+.gallery-hero h1 {
+  font-size: 58px;
+  color: #6fd1c7;
+  letter-spacing: 4px;
+  font-weight: 800;
+
+  -webkit-text-stroke: 1.5px #e9e4e4(0,0,0,0.6);
+   text-shadow:
+    0 3px 6px rgb(243, 239, 239),
+    0 8px 18px rgb(241, 236, 236);
+}
+.gallery-page-wrapper *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', Arial;
+}
+
+.gallery-destinations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.gallery-card {
+  text-decoration: underline;
+  color: #0b1f3b;
+  background: #ffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px #6fd1c7;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-card h3 {
+  padding: 15px;
+  text-align: center;
+}
+
+
+.gallery-section {
+  display: none;
+  padding: 40px;
+}
+
+.gallery-section:target {
+  display: block;
+}
+
+.gallery-section:target ~ #gallery-home {
+  display: none;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* BACK BUTTON */
+.gallery-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* FOOTER */
+.gallery-footer {
+  background: #0b1f3b;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  margin-top: 40px;
+}
+
+.gallery-love {
+  font-size: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.gallery-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
