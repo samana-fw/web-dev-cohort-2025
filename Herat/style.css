@@ -97,7 +97,7 @@ font-size:1.1rem;
     object-fit: cover;
     border-radius:15px;
     display:block;
-
+/*
 .index-nav-container{
   display: flex;
   justify-content: space-between;
@@ -131,7 +131,7 @@ font-size:1.1rem;
   align-items: center;
   background-size: cover;
 }
-
+*/
 .index-hero-content{
   text-align: center;
   color: white;
